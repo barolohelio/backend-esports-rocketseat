@@ -1,0 +1,22 @@
+import express from 'express'
+
+const app = express()
+
+app.get('/ads', (request, response) => {
+  return response.json([
+    {id: 1, name: 'Anuncio 1'},
+    {id: 2, name: 'Anuncio 2'},
+    {id: 3, name: 'Anuncio 3'},
+    {id: 4, name: 'Anuncio 4'},
+  ])
+})
+
+ app.listen(3333)
+
+ /** ----------------------------- TYPESCRIPT-----------------------------------
+  *  _Tipagem estática permite a gente definir o formato que esperamos de cada
+  *  informação. 
+  * 
+  * _Tipagem Dinâmica os tipos dos dados nao sao definidos, como por exemplo no
+  * javascript e PHP em versões anteriores
+ /** -----------------------------TYPESCRIPT----------------------------------*/ 
