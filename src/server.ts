@@ -14,8 +14,6 @@
  *   * https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
  *   * 
  */
-
-
 import express from 'express'
 
 const app = express()
